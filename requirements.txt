@@ -1,0 +1,25 @@
+# Core deep learning
+torch --index-url https://download.pytorch.org/whl/rocm6.0
+torchvision --index-url https://download.pytorch.org/whl/rocm6.0
+torchaudio --index-url https://download.pytorch.org/whl/rocm6.0
+
+# Transformers + training utils
+transformers==4.*
+datasets==3.*
+accelerate==1.*
+peft==0.*
+evaluate==0.*
+sentencepiece
+
+# Deployment (backend + frontend templating)
+fastapi
+uvicorn[standard]
+jinja2
+
+# Monitoring / logging
+tensorboard
+
+# Utilities
+tqdm
+numpy
+pandas
