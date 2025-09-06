@@ -1,6 +1,6 @@
 # Screenplay GPT-2 Fine-Tuning (Local, No APIs)
 
-This project fine-tunes **GPT-2 Medium (355M)** on screenplay-style datasets to generate cinematic text: dialogues, scene directions, and professional screenplay formatting. Everything runs **locally on AMD GPUs (ROCm)** without external APIs.
+This project fine-tunes **GPT-2 Medium (355M)** on screenplay-style datasets to generate cinematic text: dialogues, scene directions, and professional screenplay formatting. Everything runs **locally on AMD GPUs (ROCm)** without external APIs. Takes an image as input (e.g., a mood board, a piece of concept art of a dusty saloon). Uses an image-to-text model to generate a description of the scene. Feeds that description into the fine-tuned script model. The model then generates a full script scene (INT. SALOON - DAY, dialogue, action lines) that matches the visual tone and genre.
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)
